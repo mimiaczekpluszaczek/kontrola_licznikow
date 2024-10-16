@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wskaźniki w formie pasków postępu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td {
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            border: 1px solid #ccc;
+        }
+
+        .progress-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Wskaźniki w formie pasków postępu</h2>
+
+    <table>
+        <tr>
+            <td>
+                <div class="progress-container">
+                    <label>Temperatura (°C)</label>
+                    <progress class="progress-bar" value="9.4" max="50"></progress>
+                </div>
+            </td>
+            <td>
+                <div class="progress-container">
+                    <label>Głośność (dB)</label>
+                    <progress class="progress-bar" value="41.15" max="100"></progress>
+                </div>
+            </td>
+            <td>
+                <div class="progress-container">
+                    <label>Wilgotność (%)</label>
+                    <progress class="progress-bar" value="75.5" max="100"></progress>
+                </div>
+            </td>
+            <td>
+                <div class="progress-container">
+                    <label>Ciśnienie (hPa)</label>
+                    <progress class="progress-bar" value="1013.8" max="1050"></progress>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="progress-container">
+                    <label>PM2.5 (µg/m³)</label>
+                    <progress class="progress-bar" value="5" max="50"></progress>
+                </div>
+            </td>
+            <td>
+                <div class="progress-container">
+                    <label>PM10 (µg/m³)</label>
+                    <progress class="progress-bar" value="5" max="50"></progress>
+                </div>
+            </td>
+            <td>
+                <div class="progress-container">
+                    <label>PM1 (µg/m³)</label>
+                    <progress class="progress-bar" value="3" max="50"></progress>
+                </div>
+            </td>
+            <td>
+                <div class="progress-container">
+                    <label>Jakość powietrza (IAQ)</label>
+                    <progress class="progress-bar" value="65" max="100"></progress>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
